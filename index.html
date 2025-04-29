@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Face Recognition Attendance</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Face Recognition Attendance System</h1>
+    <div class="container">
+        <div class="camera">
+            <img src="{{ url_for('video') }}" id="videoFeed">
+        </div>
+        <div class="info">
+            <h2>ข้อมูลนักเรียน</h2>
+            <p>ชื่อ: <span id="name">-</span></p>
+            <p>รหัส: <span id="id">-</span></p>
+            <p>สาขา: <span id="major">-</span></p>
+            <p>จำนวนครั้งที่เข้าห้องสมุด: <span id="attendance">-</span> ครั้ง</p>
+            <p>เวลาเช็คชื่อ: <span id="checkin_time">-</span></p> <!-- เพิ่มแค่ตรงนี้ -->
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
